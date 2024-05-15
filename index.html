@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Coffee Listing</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="collection-card">
+      <header>
+        <h1>Our Collection</h1>
+        <p>
+          Introducing our Coffee Collection, a selection of unique coffees from
+          different roast types and origins, expertly roasted in small batches
+          and shipped fresh weekly.
+        </p>
+        <button id="all" class="active">All Products</button>
+        <button id="available">Available Now</button>
+      </header>
+
+      <section>
+        <div class="coffee-card">
+          <span class="pop-tag">Poplar</span>
+          <img
+            class="coffe-img"
+            src="/images/devchallenges-logo.svg"
+            alt="coffee"
+          />
+          <div class="type">
+            <p>Cappuccino</p>
+            <span class="price">$5.20</span>
+          </div>
+          <div class="rate-sold">
+            <div class="rate">
+              <img src="/images/Star_fill.svg" alt="Star_fill" />
+              <p>4.7 <span>(65 votes)</span></p>
+            </div>
+            <p class="sold-out">Sold out</p>
+          </div>
+        </div>
+
+        <div class="coffee-card">
+          <span class="pop-tag">Poplar</span>
+          <img
+            class="coffe-img"
+            src="/images/pexels-chevanon-312418.jpg"
+            alt="coffee"
+          />
+          <div class="type">
+            <p>Cappuccino</p>
+            <span class="price">$5.20</span>
+          </div>
+          <div class="rate-sold">
+            <div class="rate">
+              <img src="./images/Star.svg" alt="Star" />
+              <p class="no-rate">No ratings</p>
+            </div>
+          </div>
+        </div>
+        <div class="coffee-card">
+          <span class="pop-tag active">Poplar</span>
+          <img
+            class="coffe-img"
+            src="/images/devchallenges-logo.svg"
+            alt="coffee"
+          />
+          <div class="type">
+            <p>Cappuccino</p>
+            <span class="price">$5.20</span>
+          </div>
+          <div class="rate-sold">
+            <div class="rate">
+              <img src="/images/Star_fill.svg" alt="Star_fill" />
+              <p>4.7 <span>(65 votes)</span></p>
+            </div>
+            <p class="sold-out">Sold out</p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="/js/script.js"></script>
+  </body>
+</html>

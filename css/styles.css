@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "DM Sans", sans-serif;
+}
+
+:root {
+  --heading-size: 32px;
+  --body-size: 16px;
+  --label-size: 14px;
+  --small-text-size: 10px;
+  --price-text-size: 12px;
+  --body-background-color: #111315;
+  --card-background-color: #1b1d1f;
+  --text-buttom-color: #6f757c;
+  --price-background-color: #bee3cc;
+  --text-color: #fef7ee;
+  --star-pop-tag-color: #f6c768;
+  --sold-out-color: #ed735d;
+}
+
+body {
+  background: var(--body-background-color) url(../images/bg-cafe.jpg) no-repeat;
+  background-size: contain;
+
+  color: var(--text-color);
+}
+
+.collection-card {
+  background-color: var(--card-background-color);
+  margin: 12vw 15vh;
+  max-width: 80vw;
+  padding: 32px;
+  border-radius: 15px;
+}
+
+header {
+  text-align: center;
+  width: 500px;
+  margin: auto;
+}
+
+h1 {
+  font-size: var(--heading-size);
+  margin-bottom: 2rem;
+}
+
+header p {
+  font-size: var(--body-size);
+  color: var(--text-buttom-color);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+button {
+  border: none;
+  border-radius: 10px;
+  padding: 8px 16px;
+  background-color: transparent;
+  color: var(--text-buttom-color);
+  font-size: var(--body-size);
+  font-weight: 700;
+}
+
+button.active {
+  background-color: var(--text-buttom-color);
+  color: var(--text-color);
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.coffee-card {
+  position: relative;
+  width: 250px;
+  margin: 20px;
+}
+
+.pop-tag {
+  display: none;
+}
+
+.pop-tag.active {
+  display: inline;
+  position: absolute;
+  font-size: var(--small-text-size);
+  font-weight: 700;
+  background-color: var(--star-pop-tag-color);
+  padding: 3px 12px;
+  border-radius: 30px;
+  color: var(--card-background-color);
+  margin: 10px;
+  text-align: center;
+}
+
+.coffe-img {
+  width: 250px;
+  max-width: 250px;
+  max-height: 150px;
+  border-radius: 10%;
+}
+
+.type,
+.rate,
+.rate-sold {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rate-sold {
+  margin-top: 5px;
+  padding: 0 5px;
+}
+
+.type p {
+  color: var(--text-color);
+  font-size: var(--body-size);
+  padding-left: 5px;
+}
+
+.price {
+  font-size: var(--price-text-size);
+  font-weight: 700;
+  text-align: center;
+  border-radius: 10px;
+  color: var(--body-background-color);
+  background-color: var(--price-background-color);
+  padding: 4px 8px;
+  margin-right: 5px;
+}
+
+.rate p {
+  font-size: var(--label-size);
+  color: var(--text-color);
+}
+
+p.no-rate {
+  color: var(--text-buttom-color);
+}
+
+.rate span {
+  color: var(--text-buttom-color);
+}
+
+.sold-out {
+  color: var(--sold-out-color);
+}
