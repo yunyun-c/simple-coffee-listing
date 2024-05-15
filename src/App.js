@@ -1,5 +1,6 @@
-import Card from "./Card.js";
 import { useEffect, useState } from "react";
+import Card from "./Card.js";
+import FilterButton from "./FilterButton.js";
 
 const App = () => {
   const [data, setData] = useState([]);
@@ -25,20 +26,19 @@ const App = () => {
           different roast types and origins, expertly roasted in small batches
           and shipped fresh weekly.
         </p>
-        <button
+
+        <FilterButton
           id="all"
-          className={filter === "all" ? "active" : ""}
-          onClick={() => setFilter("all")}
-        >
-          All Products
-        </button>
-        <button
+          filter={filter}
+          setFilter={setFilter}
+          label="All Products"
+        />
+        <FilterButton
           id="available"
-          className={filter === "available" ? "active" : ""}
-          onClick={() => setFilter("available")}
-        >
-          Available Now
-        </button>
+          filter={filter}
+          setFilter={setFilter}
+          label="Available Now"
+        />
       </header>
       <section>
         {filteredData.map((item, index) => (
