@@ -22,13 +22,14 @@
 }
 
 body {
-  background: var(--body-background-color) url(../images/bg-cafe.jpg) no-repeat;
+  background: var(--body-background-color) url(../public/images/bg-cafe.jpg)
+    no-repeat;
   background-size: contain;
 
   color: var(--text-color);
 }
 
-.collection-card {
+.App {
   background-color: var(--card-background-color);
   margin: 12vw 15vh;
   max-width: 80vw;
@@ -37,6 +38,8 @@ body {
 }
 
 header {
+  background: transparent url(../public/images/vector.svg) no-repeat top right /
+    auto;
   text-align: center;
   width: 500px;
   margin: auto;
@@ -62,6 +65,7 @@ button {
   color: var(--text-buttom-color);
   font-size: var(--body-size);
   font-weight: 700;
+  cursor: pointer;
 }
 
 button.active {
@@ -72,7 +76,7 @@ button.active {
 section {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -83,10 +87,6 @@ section {
 }
 
 .pop-tag {
-  display: none;
-}
-
-.pop-tag.active {
   display: inline;
   position: absolute;
   font-size: var(--small-text-size);
